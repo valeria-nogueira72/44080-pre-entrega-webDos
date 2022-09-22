@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@1,300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #e1f0eb;
+    text-align: center;
+    font-family: poppins sans-serif;
+    font-weight: bolder;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    border: solid grey;
+}
+
+header{
+    font-size: large;
+    display: grid;
+    justify-content: center;
+    border: solid grey;
+}
+
+header,h2{
+    color: black;
+}
+
+a{
+    display: flex;
+    margin-right: 1px;
+    margin-left: 1px;
+}
+
+main,h1,h3{
+    border: solid grey;
+    background-color: rgba(43, 236, 204, 0.956);
+} 
+
+nav ul li{
+    list-style-type: none; 
+    border: solid 3px grey;
+    margin-top: 25px;
+}
+
+nav{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    
+}
+
+
+header{
+    background: rgb(85,232,182);
+    background: linear-gradient(259deg, rgba(85,232,182,0.35841495526505773) 6%, rgba(71,158,162,0.8171608298525165) 26%, rgba(15,240,211,1) 52%, rgba(160,232,231,0.8171608298525165) 84%, rgba(116,197,174,1) 99%);
+    background-color: rgba(43, 236, 204, 0.956);
+}
+
+
+.menu{
+    display: flex;
+    
+    align-items: center;
+    margin-right: 45px;
+}
+
+.menu_items{
+    display: flex;
+    list-style-type: none; 
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu_items li {
+    border-radius: 1px;
+    margin: 3px;
+    
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    
+    
+}
+main{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+section .padre{
+    border: solid grey;
+}
+
+
+
+
+
+
+p{
+    border: solid grey;
+    font-size: large;
+    font-weight: bolder;
+    text-decoration-color: black;
+    text-align: center;
+    width: 250px;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+.carousel-inner{    
+    width: 919px;
+    height: 201px;
+    margin-bottom: 100px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+
+button{
+    height: 50px;
+    width: 150px;
+    margin-bottom: 25x;
+}
+
+footer{
+background: linear-gradient(259deg, rgba(85,232,182,0.35841495526505773) 6%, rgba(71,158,162,0.8171608298525165) 26%, rgba(15,240,211,1) 52%, rgba(160,232,231,0.8171608298525165) 84%, rgba(116,197,174,1) 99%);
+    background-color: rgba(43, 236, 204, 0.956);
+    padding: 60px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    border: solid grey;
+}
+.instagram{
+    display: flex;
+    justify-content: center;
+}
+
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+.galeria-grid{
+    grid-area: galeria;
+}
+
+.padre{
+    grid-area: padre;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.envoltura{
+    background-color: #e1f0eb;
+    margin-bottom: 0;
+    display: grid;
+    gap: 2px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "galeria"
+    "padre"
+    "footer";
+}
+
+.padre{
+    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 10px;
+}
+
+img{ 
+    width: 250px;
+    height: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: solid grey 5px;
+}
+
+@media(min-width:500px){
+    .envoltura{
+        margin: 0px;
+        grid-template-columns: 1fr ;
+        grid-template-areas: 
+        "header" "header"
+        "nav"    "nav"
+        "main"  "main"
+        "galeria" "galeria"
+        "footer" "footer";
+    }
+}
+@media(min-width:768px){
+    .envoltura{
+        background: rgba(222, 182, 221, 0.961);
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "header" "header"
+        "nav"    "nav"
+        "main"  "main"
+        "galeria" "galeria"
+        "footer" "footer";
+    }
+    main{
+        background-color: #e57fff;
+    }
+    .galeria-grid{
+        background-color: rgb(232, 9, 221);
+    }
+    .padre{
+        background-color: rgb(172, 241, 228);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        margin: 3em;
+    }
+}
+@media(min-width:1024px){
+    
+}
+
+
+
+
